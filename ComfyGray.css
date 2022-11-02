@@ -2423,3 +2423,145 @@ button.button-2b4VEQ.height20-WSMpPs.button-f2h6uQ.lookFilled-yCfaCM.colorGreen-
 .newMessagesBar-1hF-9G{
     background-color        :             rgb(63, 63, 63);
 }
+
+
+
+/* css snippets from #css-snippets */
+
+@import url(https://dablulite.github.io/accountdetailscolumns/import.css);
+
+.toolbar-3_r2xA .anchor-1MIwyf {
+display: none;
+}
+
+div#BDFDB-card, div#ZeresPluginLibrary-card {display: none;}
+
+
+@import url(https://dablulite.github.io/RedesignedUserPanel/import.css);
+
+
+.topLine-3rZgHE {
+justify-content: space-between;
+}
+
+/*Role borders*/
+:root{
+  --roles-roundness: 0; /* change the 0 to any other number if you want the roles to be fully round */
+
+  --roles-roundness-calc: calc((var(--roles-roundness) + .21) * 25px)
+}
+.role-2TIOKu {
+  transform: translate(0);
+  border: 0;
+  border-radius: var(--roles-roundness-calc);
+}
+.role-2TIOKu .roleRemoveIcon-387wKV {
+  margin: 0;
+  left: unset;
+  transform: translate(50%,-50%);
+}
+.role-2TIOKu .roleRemoveButton-17oXnT{position: static}
+.role-2TIOKu .roleCircle-3K9O3d:before {
+  content: '';
+  top: 0;left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  position: absolute;
+  background: inherit;
+  border-radius: var(--roles-roundness-calc);
+  border: 2px solid transparent;
+  -webkit-mask: linear-gradient(#000 0 0) padding-box, linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+}
+
+
+/* removes watermark */
+
+.wordmarkWindows-2dq6rw svg {
+	display: none;
+}
+
+
+/*Removes nitro promo stuff*/
+.privateChannels-oVe7HL [href="/store"] + svg,
+.item-3XjbnG [class*="Promo"],
+.premiumLabel-3HPvdB svg,
+.premiumLabel-3HPvdB .badgeIconSettingsMenu-39c26C {
+display: none;
+}
+.premiumLabel-3HPvdB {
+color: var(--color-muted);
+}
+
+
+/*Account creation connection*/
+.discordMemberCreatedAtIconContainer-2oMHqL  {
+padding: 0px;
+background-color: var(--background-tertiary);
+}
+.discordMemberCreatedAtIcon-126if8 {
+width: 24px;
+height: 24px;
+}
+.discordMemberCreatedAtText-15sN5q>div{
+display: none;
+}
+.discordMemberCreatedAt-31OkT7>.discordMemberCreatedAtText-15sN5q>h3{
+font-size: 16px;
+font-family: inherit;
+font-weight: 600;
+user-select: text;
+}
+
+
+/*Connection issue prompt*/
+.container-2RRFHK {
+background: transparent;
+pointer-events: none;
+}
+.container-2RRFHK .anchor-1MIwyf { pointer-events: auto; }
+.container-2RRFHK .content-3AIQZv .text-2bYgPB {
+display:none;
+}
+.container-2RRFHK .ready-3BZNWT {
+position: absolute;
+bottom: 44px;
+right: 244px;
+z-index: 1;
+}
+.container-2RRFHK img, .container-2RRFHK video {
+width: 32px;
+height: 32px;
+}
+.container-2RRFHK .problems-CvGwpb {
+padding: 8px 16px;
+bottom: 18px;
+left: unset;
+right: 18px;
+width:fit-content;
+height:fit-content;
+background-color: var(--background-floating);
+border-radius: 8px;
+-webkit-box-shadow: var(--elevation-stroke), var(--elevation-medium);
+box-shadow: var(--elevation-stroke), var(--elevation-medium);
+}
+
+
+/*removes "public" thingy*/
+.communityInfoContainer-1dMVpU {
+display: none;
+}
+.container-1NXEtd .content-2a4AW9 > div[style="height: 16px;"]:nth-child(2){
+display: none;
+}
+
+
+/*Well this is akward*/
+@import url(https://maendisease.github.io/BetterDiscordStuff/css/wellThisIsAwkwardSoTryThis.css);
+
+
+/* Discord Links */
+@import url("https://thecommieaxolotl.github.io/BetterDiscord-Stuff/Imports/DiscordLinks.css");
+
